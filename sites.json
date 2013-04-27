@@ -1,0 +1,58 @@
+[
+    {
+        "sites": [
+            {
+                "link": "https://github.com/gaganpreet", 
+                "name": "Github"
+            }
+        ], 
+        "type": "Code"
+    }, 
+    {
+        "sites": [
+            {
+                "link": "https://twitter.com/_gagan", 
+                "name": "Twitter"
+            }, 
+            {
+                "link": "http://gaganpreet.in/blog", 
+                "name": "Blog"
+            }, 
+            {
+                "link": "https://plus.google.com/110505584915590690511/", 
+                "name": "Google+"
+            }, 
+            {
+                "link": "https://alpha.app.net/gagan", 
+                "name": "App.net"
+            }
+        ], 
+        "type": "Ramblings"
+    }, 
+    {
+        "sites": [
+            {
+                "link": "mailto:me [at] gaganpreet.in", 
+                "name": "E-mail"
+            }
+        ], 
+        "type": "Contact"
+    }, 
+    {
+        "sites": [
+            {
+                "link": "http://last.fm/user/gaganpreet", 
+                "name": "Last.fm"
+            }, 
+            {
+                "link": "http://in.linkedin.com/in/gaganpreetarora", 
+                "name": "LinkedIn"
+            }, 
+            {
+                "link": "http://www.goodreads.com/user/show/7515314-gaganpreet", 
+                "name": "Goodreads"
+            }
+        ], 
+        "type": "Other"
+    }
+]

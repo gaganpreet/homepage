@@ -1,0 +1,26 @@
+{% extends "main.html" %}
+{% block main %}
+    <div class="content">
+        <!--- Oh hi, thanks for dropping by! -->
+        Hi, I'm <b>Gaganpreet</b>. I write code to solve interesting problems. I <a href="http://gaganpreet.in/blog/">blog</a> and <a href="https://twitter.com/_gagan">tweet</a> every now and then. Check out some of the stuff I've worked on <a href="projects.html">here</a>. <br /> <br />
+        <br />
+
+        <h3>Past:</h3>
+        <h4>Work:</h4>
+        <a href="http://yahoo.com">Yahoo! Bangalore (2010-2012)</a> - Software Engineer<br />
+        <a href="http://iiit.ac.in">IIIT Hyderabad (2009-2010)</a> - Student Sysadmin<br />
+        <h4>Education:</h4>
+        <a href="http://iiit.ac.in">IIIT Hyderabad (2006-2010)</a> - B. Tech CSE<br /><br />
+
+        <!-- External links -->
+        <h3>Social:</h3>
+        {% for site_group in sites %}
+        <p class="online">
+            {{ site_group.type }}:
+            {% for site in site_group.sites %}
+                <a class="online-element" href="{{ site.link }}">{{ site.name }}</a>
+            {% endfor %}
+        </p>
+        {% endfor %}
+    </div>
+{% endblock %}

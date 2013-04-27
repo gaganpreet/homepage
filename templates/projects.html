@@ -1,0 +1,37 @@
+{% extends "main.html" %}
+{% block main %}
+    <div class="content">
+        <h3><a href="http://web.iiit.ac.in/~gaganpreet/blogroll">IIIT Blogroll</a></h3>
+        <p>
+            <img src="static/blogroll.png" class="imgleft" />
+            A blog aggregator built on Bootstrap and Simplepie. It uses flat files and fetches feeds every hour and provides an aggregated feed for consumption. 
+         </p>
+    </div>
+
+    <br />
+    <br />
+
+    <div class="content">
+        <h3><a href="https://github.com/gaganpreet/mbr-game">Pacman in Assembly</a></h3>
+        <p>
+            <img src="static/pacman.png" class="imgleft" />
+            A simplified clone of pacman written in assembly. It turned out to be 482 bytes overall (30 bytes short of the size limit of an MBR). Compared to the original Pacman, there are no ghosts, no levels. 
+        </p>
+    </div>
+
+    <br />
+    <br />
+
+    <div class="content">
+        <h3><a href="static/video_characterization.pdf">Video characterization [PDF]</a></h3>
+        <p>
+            My work on video characterization - data mining applied directly to video data instead of associated metadata. It was ultimately used to predict the genre of an unknown movie which gave an accuracy of about 80%.
+        </p>
+    </div>
+
+    <br />
+    <br />
+    <div class="centered">
+        Other: My <a href="https://github.com/gaganpreet/dotfiles">dotfiles</a>, source for this <a href='https://github.com/gaganpreet/homepage'>site</a>, and a <a href='https://duckduckgo.com/?q=port+42'>plugin</a> I wrote for DuckDuckGo.
+    </div>
+{% endblock %}

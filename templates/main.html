@@ -4,25 +4,63 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="author" content="Gaganpreet Singh Arora" />
     <meta name="keywords" content="gaganpreet singh arora personal iiit hyderabad bangalore" />
-    <title>Gaganpreet Singh Arora</title>
+    <title>Gaganpreet Singh Arora - {{ title }}</title>
 <style type="text/css">
 body {
-    width: 500px;
-    background-color: #e1ddd9;
+    width: 100%;
+    background-image: url('static/background.png');
+    background-repeat: repeat;
+    background-size: auto auto;
     margin: 10% auto;
+    font-family: Verdana, Arial, Helvetica, SunSans-Regular, Sans-Serif;
+    color:#564b47;
 }
-#content {
+.content {
+    width: 500px;
     background-color: #fff;
     margin: 0 auto;
     padding: 20px;
     box-shadow: 10px 10px 5px #888;
+    overflow: auto;
+}
+.content a, a:visited {
+    color: #0187C5;
+}
+.centered {
+    text-align:center;
+    color: #fff;
+}
+.centered a {
+    color: #999;
+}
+.online {
+    margin: 8px 0;
+}
+.online-element {
+    background: #eee;
+    border: 1px solid #0187C5;    
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 0 2px 0;
+    font-weight: bold;
+}
+h4, h3 {
+    margin: 5px 0;
+}
+.imgleft {
+    display:inline;
+    float:left;
+     margin:5px 15px 5px 0;
 }
 </style>
 </head>
 <body>
-    <div id="content">
-        The page you were looking for was not found.
+    <div id="main">
+        {% block main %}{% endblock %}
     </div>
+
+    <br /><br />
+
      <!-- Piwik -->
      <script type="text/javascript">
          var pkBaseURL = (("https:" == document.location.protocol) ? "https://gaganpreet.in/piwik/" : "http://gaganpreet.in/piwik/");
@@ -33,7 +71,7 @@ body {
              piwikTracker.trackPageView();
              piwikTracker.enableLinkTracking();
          } catch( err ) {}
-     </script><noscript><p><img src="http://gaganpreet.in/piwik/piwik.php?idsite=1" style="border:0" alt="" /></p></noscript>
+     </script><noscript><p class="online"><img src="http://gaganpreet.in/piwik/piwik.php?idsite=1" style="border:0" alt="" /></p></noscript>
      <!-- End Piwik Tracking Code -->
 </body>
 </html>
