@@ -15,16 +15,12 @@
                 "name": "Twitter"
             }, 
             {
-                "link": "http://gaganpreet.in/blog", 
+                "link": "https://gaganpreet.in/blog", 
                 "name": "Blog"
             }, 
             {
-                "link": "https://plus.google.com/110505584915590690511/", 
-                "name": "Google+"
-            }, 
-            {
-                "link": "https://alpha.app.net/gagan", 
-                "name": "App.net"
+                "link": "https://www.facebook.com/gaganpreet.arora", 
+                "name": "Facebook"
             }
         ], 
         "type": "Ramblings"
