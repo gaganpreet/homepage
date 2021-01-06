@@ -10,21 +10,21 @@ def index():
     sites = json.load(open('sites.json'))
     html = template.render(sites=sites, title="Home")
         
-    output = open('index.html', 'w')
+    output = open('public/index.html', 'w')
     output.write(html)
 
 def projects():
     template = env.get_template('projects.html')
     html = template.render(title = 'Projects')
 
-    output = open('projects.html', 'w')
+    output = open('public/projects.html', 'w')
     output.write(html)
 
 def make_404():
     template = env.get_template('404.html')
     html = template.render(title = 'Page not found')
 
-    output = open('404.html', 'w')
+    output = open('public/404.html', 'w')
     output.write(html)
     
 pages = [index, projects, make_404]
