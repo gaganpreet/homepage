@@ -1,4 +1,5 @@
 import json
+import shutil
 from jinja2 import FileSystemLoader
 from jinja2.environment import Environment
 
@@ -32,3 +33,9 @@ pages = [index, projects, make_404]
 if __name__ == '__main__':
     for page in pages:
         page()
+
+    shutil.copytree(
+        "static", 
+        "public/static", 
+        ignore=None, 
+        )
